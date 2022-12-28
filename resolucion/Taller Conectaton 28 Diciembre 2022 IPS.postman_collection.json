@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "9d9975f3-0a82-49ef-93dc-caf7a92b2215",
+		"name": "Taller Conectaton 28 Diciembre 2022 IPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7132598"
+	},
+	"item": [
+		{
+			"name": "Bundle",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json+fhir",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"resourceType\": \"Bundle\",\r\n    \"meta\": {\r\n        \"profile\": [\r\n            \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/BundleCl\"\r\n        ]\r\n    },\r\n    \"type\": \"document\",\r\n    \"timestamp\": \"2022-11-16T14:30:00+01:00\",\r\n    \"entry\": [\r\n        {\r\n            \"fullUrl\": \"urn:uuid:ae412059-b383-42dc-8ea8-13922ab8b83c\",\r\n            \"resource\": {\r\n                \"resourceType\": \"Practitioner\",\r\n                \"id\": \"ae412059-b383-42dc-8ea8-13922ab8b83c\",\r\n                \"meta\": {\r\n                    \"profile\": [\r\n                        \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePrestadorCl\"\r\n                    ]\r\n                },\r\n                \"identifier\": [\r\n                    {\r\n                        \"use\": \"official\",\r\n                        \"system\": \"http://api_run/run\",\r\n                        \"value\": \"8336277-3\"\r\n                    }\r\n                ],\r\n                \"active\": true,\r\n                \"name\": [\r\n                    {\r\n                        \"use\": \"official\",\r\n                        \"_family\": {\r\n                            \"extension\": [\r\n                                {\r\n                                    \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-mothers-family\",\r\n                                    \"valueString\": \"Reyes\"\r\n                                }\r\n                            ]\r\n                        },\r\n                        \"given\": [\r\n                            \"Johanna\",\r\n                            \"Rosa\"\r\n                        ]\r\n                    }\r\n                ],\r\n                \"telecom\": [\r\n                    {\r\n                        \"system\": \"phone\",\r\n                        \"value\": \"9345666\",\r\n                        \"use\": \"mobile\"\r\n                    },\r\n                    {\r\n                        \"system\": \"email\",\r\n                        \"value\": \"DraSilva@mimail.com\",\r\n                        \"use\": \"work\"\r\n                    }\r\n                ],\r\n                \"gender\": \"female\",\r\n                \"birthDate\": \"1974-08-12\"\r\n            }\r\n        },\r\n        {\r\n            \"fullUrl\": \"urn:uuid:7efcf631-0ef4-46a3-884a-47bc1aa4c552\",\r\n            \"resource\": {\r\n                \"resourceType\": \"Patient\",\r\n                \"id\": \"7efcf631-0ef4-46a3-884a-47bc1aa4c552\",\r\n                \"meta\": {\r\n                    \"profile\": [\r\n                        \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl\"\r\n                    ]\r\n                },\r\n                \"extension\": [\r\n                    {\r\n                        \"url\": \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises\",\r\n                        \"valueCodeableConcept\": {\r\n                            \"coding\": [\r\n                                {\r\n                                    \"system\": \"urn:iso:std:iso:3166\",\r\n                                    \"code\": \"152\",\r\n                                    \"display\": \"Chile\"\r\n                                }\r\n                            ]\r\n                        }\r\n                    }\r\n                ],\r\n                \"identifier\": [\r\n                    {\r\n                        \"use\": \"official\",\r\n                        \"type\": {\r\n                            \"extension\": [\r\n                                {\r\n                                    \"url\": \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises\",\r\n                                    \"valueCodeableConcept\": {\r\n                                        \"coding\": [\r\n                                            {\r\n                                                \"system\": \"urn:iso:std:iso:3166\",\r\n                                                \"code\": \"152\",\r\n                                                \"display\": \"Chile\"\r\n                                            }\r\n                                        ]\r\n                                    }\r\n                                }\r\n                            ],\r\n                            \"coding\": [\r\n                                {\r\n                                    \"system\": \"https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI\",\r\n                                    \"code\": \"NNCHL\",\r\n                                    \"display\": \"Chile\"\r\n                                }\r\n                            ]\r\n                        },\r\n                        \"system\": \"http://regcivil.cl/Validacion/RUN\",\r\n                        \"value\": \"17500419-k\"\r\n                    }\r\n                ],\r\n                \"name\": [\r\n                    {\r\n                        \"use\": \"official\",\r\n                        \"family\": \"Pérez\",\r\n                        \"_family\": {\r\n                            \"extension\": [\r\n                                {\r\n                                    \"url\": \"http://hl7.org/fhir/StructureDefinition/humanname-mothers-family\",\r\n                                    \"valueString\": \"Pérez\"\r\n                                }\r\n                            ]\r\n                        },\r\n                        \"given\": [\r\n                            \"José\",\r\n                            \"Antonio\"\r\n                        ]\r\n                    }\r\n                ],\r\n                \"telecom\": [\r\n                    {\r\n                        \"system\": \"phone\",\r\n                        \"value\": \"987654321\",\r\n                        \"use\": \"mobile\"\r\n                    },\r\n                    {\r\n                        \"system\": \"email\",\r\n                        \"value\": \"jose.perez@miemail.cl\",\r\n                        \"use\": \"work\"\r\n                    }\r\n                ],\r\n                \"gender\": \"male\",\r\n                \"birthDate\": \"1984-10-23\"\r\n            }\r\n        },\r\n        {\r\n            \"fullUrl\": \"urn:uuid:2aa5bd00-fcf0-4eb5-8a5c-29a490db22fe\",\r\n            \"resource\": {\r\n                \"resourceType\": \"Condition\",\r\n                \"id\": \"2aa5bd00-fcf0-4eb5-8a5c-29a490db22fe\",\r\n                \"meta\": {\r\n                    \"profile\": [\r\n                        \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl\"\r\n                    ]\r\n                },\r\n                \"clinicalStatus\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://terminology.hl7.org/CodeSystem/condition-clinical\",\r\n                            \"code\": \"active\"\r\n                        }\r\n                    ]\r\n                },\r\n                \"code\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://snomed.info/sct\",\r\n                            \"code\": \"10509002\",\r\n                            \"display\": \"Acute bronchitis (disorder)\"\r\n                        }\r\n                    ],\r\n                    \"text\": \"Bronquitis aguda\"\r\n                },\r\n                \"subject\": {\r\n                    \"reference\": \"urn:uuid:7efcf631-0ef4-46a3-884a-47bc1aa4c552\"\r\n                },\r\n                \"onsetDateTime\": \"2022-10-15\"\r\n            }\r\n        },\r\n        {\r\n            \"fullUrl\": \"urn:uuid:48294fba-bbb2-4047-b847-c7691d459fee\",\r\n            \"resource\": {\r\n                \"resourceType\": \"Condition\",\r\n                \"id\": \"48294fba-bbb2-4047-b847-c7691d459fee\",\r\n                \"meta\": {\r\n                    \"profile\": [\r\n                        \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreDiagnosticoCl\"\r\n                    ]\r\n                },\r\n                \"clinicalStatus\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://terminology.hl7.org/CodeSystem/condition-clinical\",\r\n                            \"code\": \"resolved\"\r\n                        }\r\n                    ]\r\n                },\r\n                \"code\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://snomed.info/sct\",\r\n                            \"code\": \"391093004\",\r\n                            \"display\": \"History of hip fracture (situation\"\r\n                        }\r\n                    ],\r\n                    \"text\": \"Fractura de cadera (antecedente)\"\r\n                },\r\n                \"subject\": {\r\n                    \"reference\": \"urn:uuid:7efcf631-0ef4-46a3-884a-47bc1aa4c552\"\r\n                },\r\n                \"onsetDateTime\": \"2015-06-24\"\r\n            }\r\n        },\r\n        {\r\n            \"fullUrl\": \"urn:uuid:1f8d64b2-ba04-4a15-93a0-6a4118896eb3\",\r\n            \"resource\": {\r\n                \"resourceType\": \"Composition\",\r\n                \"id\": \"1f8d64b2-ba04-4a15-93a0-6a4118896eb3\",\r\n                \"meta\": {\r\n                    \"profile\": [\r\n                        \"https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl\"\r\n                    ]\r\n                },\r\n                \"status\": \"final\",\r\n                \"type\": {\r\n                    \"coding\": [\r\n                        {\r\n                            \"system\": \"http://loinc.org\",\r\n                            \"code\": \"60591-5\",\r\n                            \"display\": \"Patient summary Document\"\r\n                        }\r\n                    ],\r\n                    \"text\": \"Ejemplo resumen paciente\"\r\n                },\r\n                \"subject\": {\r\n                    \"reference\": \"urn:uuid:7efcf631-0ef4-46a3-884a-47bc1aa4c552\"\r\n                },\r\n                \"date\": \"2022-12-28T12:30:02Z\",\r\n                \"author\": [\r\n                    {\r\n                        \"reference\": \"urn:uuid:ae412059-b383-42dc-8ea8-13922ab8b83c\"\r\n                    }\r\n                ],\r\n                \"title\": \"Resumen IPS paciente X\",\r\n                \"section\": [\r\n                    {\r\n                        \"title\": \"Diagnósticos\",\r\n                        \"code\": {\r\n                            \"coding\": [\r\n                                {\r\n                                    \"system\": \"http://loinc.org\",\r\n                                    \"code\": \"11450-4\",\r\n                                    \"display\": \"Problem list - Reported\"\r\n                                }\r\n                            ]\r\n                        },\r\n                        \"entry\": [\r\n                            {\r\n                                \"reference\": \"urn:uuid:2aa5bd00-fcf0-4eb5-8a5c-29a490db22fe\"\r\n                            },\r\n                            {\r\n                                \"reference\": \"urn:uuid:48294fba-bbb2-4047-b847-c7691d459fee\"\r\n                            }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://healthcare.cwbyminsait.com/hdr/fhir",
+					"protocol": "https",
+					"host": [
+						"healthcare",
+						"cwbyminsait",
+						"com"
+					],
+					"path": [
+						"hdr",
+						"fhir"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Resumen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://healthcare.cwbyminsait.com/hdr/fhir/Composition/Composition-36/$document",
+					"protocol": "https",
+					"host": [
+						"healthcare",
+						"cwbyminsait",
+						"com"
+					],
+					"path": [
+						"hdr",
+						"fhir",
+						"Composition",
+						"Composition-36",
+						"$document"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Composition",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://healthcare.cwbyminsait.com/hdr/fhir/Composition?patient.identifier=17500419-k",
+					"protocol": "https",
+					"host": [
+						"healthcare",
+						"cwbyminsait",
+						"com"
+					],
+					"path": [
+						"hdr",
+						"fhir",
+						"Composition"
+					],
+					"query": [
+						{
+							"key": "patient.identifier",
+							"value": "17500419-k"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

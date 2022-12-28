@@ -170,7 +170,7 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "10509002",
-                            "display": "Acute bronchitis"
+                            "display": "Acute bronchitis (disorder)"
                         }
                     ],
                     "text": "Bronquitis aguda"
@@ -204,10 +204,10 @@
                         {
                             "system": "http://snomed.info/sct",
                             "code": "391093004",
-                            "display": "History of hip fracture"
+                            "display": "History of hip fracture (situation"
                         }
                     ],
-                    "text": "BFractura de cadera (antecedente)"
+                    "text": "Fractura de cadera (antecedente)"
                 },
                 "subject": {
                     "reference": "urn:uuid:7efcf631-0ef4-46a3-884a-47bc1aa4c552"
