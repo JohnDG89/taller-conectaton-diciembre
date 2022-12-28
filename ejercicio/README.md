@@ -20,4 +20,3 @@ Construir un resumen de paciente para el siguiente caso:
     - Estado clínico: Resuelto
     - Código snomed: 391093004
     - Fecha diagnóstico: 2015-06-24
-3. 
