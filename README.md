@@ -1,5 +1,9 @@
 # Construyendo un Resumen de Paciente
 
+## Teoría inicial
+
+### Bundle
+
 La forma correcta de generar un resumen de paciente, es mediante la construcción de un Bundle de tipo `document`.
 
 Lo primero que veremos es la estructura de un bundle, la cual se representa así:
@@ -26,7 +30,9 @@ Cada `entry` ingresada debe contener la siguiente estructura:
 
 El campo `fullUrl` URI para el recurso, se sugiere emplear uuid por ejemplo `urn:uuid:53fefa32-fcbb-4ff8-8a92-55ee120877b7`. Tener en cuenta que es sensible a mayúsculas.
 
-El campo `resource` va el recurso FHIR siguiende la estructura específica de cada tipo de recurso.
+### Creación de un recurso
+
+El campo `resource` visto en el punto anterior, va el recurso FHIR siguiende la estructura específica de cada tipo de recurso.
 
 ```json
 {
@@ -48,8 +54,29 @@ Para visualizar mejor lo anterior, se muestra un ejemplo de cómo iría un recur
     "resource" : {
         "resourceType" : "Patient",
         "id" : "7685713c-e29e-4a75-8a90-45be7ba3be94",
+         //Resto del contenido del recurso Patient
     }
-    //Resto del contenido
 }
 ```
 
+### Referenciando recursos dentro del bundle
+
+Cuando se construye un resumen de paciente, emplearemos referencias entre los recursos que se han añadido al `bundle`.
+
+Veremos el ejemplo cuando usamos uuid como fullUrl, podemos referencias esto de dos formas:
+
+1. Referenciando al id del recurso: 
+
+    ```json
+    {
+        "reference": "Patient/7685713c-e29e-4a75-8a90-45be7ba3be94"
+    }
+    ```
+    Lo anterior gracias a que nuestro paciente tiene como id ese uuid.
+
+2. Referenciando a la fullUrl del `entry` ingresado en nuestro `bundle`:
+    ```json
+    {
+        "reference": "urn:uuid:7685713c-e29e-4a75-8a90-45be7ba3be94"
+    }
+    ```
