@@ -221,7 +221,9 @@
                 "resourceType": "Composition",
                 "id": "1f8d64b2-ba04-4a15-93a0-6a4118896eb3",
                 "meta": {
-                    "profile": "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl"
+                    "profile": [
+                        "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/DocumentoCl"
+                    ]
                 },
                 "status": "final",
                 "type": {
