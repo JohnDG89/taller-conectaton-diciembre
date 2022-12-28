@@ -4,3 +4,4 @@ En esta sección se disponen ejemplos JSON de los diferentes recuros FHIR que pu
 
 - Composition
 - Condition
+- Patient

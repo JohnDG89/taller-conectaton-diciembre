@@ -85,6 +85,8 @@ Veremos el ejemplo cuando usamos uuid como fullUrl, podemos referencias esto de 
 
 Un resumen de paciente en el contexto FHIR se representa mediante la generación de un recurso  `Bundle` de tipo `document`, debe contener en la sección `entry` un recurso `Composition` el cual es el que referencia los recursos y los ordena por secciones.
 
+**Nota**: Por temas del server, es requerido colocar el recurso `Composition` como último recurso de la sección `entry`.
+
 ### Composition
 
 El recurso `Composition` debe llevar en el campo `type` el código loinc asociado a un resumen de paciente, además de tener un `status` del tipo *final*:

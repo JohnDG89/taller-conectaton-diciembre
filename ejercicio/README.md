@@ -3,13 +3,14 @@
 Construir un resumen de paciente para el siguiente caso:
 
 ## Paciente
-- Nombre: Jose Antonio Pérez Pérez
+- Nombre: José Antonio Pérez Pérez
 - RUN: 44.444.444-4
 - Fecha Nacimiento: 1984-10-23
 - Celular: 987654321
 - Email: jose.perez@miemail.cl
 - Sexo: Masculino
 - Dirección particular: No indicada
+- Nacionalidad: Chile
 
 ## Antecedentes del paciente
 1. Bonquitis aguda
@@ -20,3 +21,6 @@ Construir un resumen de paciente para el siguiente caso:
     - Estado clínico: Resuelto
     - Código snomed: 391093004
     - Fecha diagnóstico: 2015-06-24
+
+## Autor
+- Utilice sus datos personales como `Practioner` autor del resumen
