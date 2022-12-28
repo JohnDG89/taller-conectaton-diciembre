@@ -38,10 +38,6 @@
           }
         ]
       },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Asma</div>"
-      },
       "entry" : [
         {
           "reference" : "Condition/1112"
@@ -58,10 +54,6 @@
             "display" : "Hx of Medication use"
           }
         ]
-      },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Anastrozole/Cimicifuga</div>"
       },
       "entry" : [
         {
@@ -80,10 +72,6 @@
           }
         ]
       },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Allergy to penicillin, high criticality, active</div>"
-      },
       "entry" : [
         {
           "reference" : "AllergyIntolerance/222"
@@ -101,10 +89,6 @@
           }
         ]
       },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Lista de las vacunas recibidas</div>"
-      },
       "entry" : [
         {
           "reference" : "Immunization/999"
@@ -121,10 +105,6 @@
             "display" : "Vital signs"
           }
         ]
-      },
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Vital signs</div>"
       },
       "entry" : [
         {

@@ -1,0 +1,151 @@
+{
+    "resourceType" : "Patient",
+    "id" : "PacienteCL",
+    "meta" : {
+      "profile" : [
+        "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CorePacienteCl"
+      ]
+    },
+    "identifier" : [
+      {
+        "use" : "official",
+        "type" : {
+          "extension" : [
+            {
+              "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "urn:iso:std:iso:3166",
+                    "code" : "152",
+                    "display" : "Chile"
+                  }
+                ]
+              }
+            }
+          ],
+          "coding" : [
+            {
+              "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodigoDNI",
+              "code" : "NNCHL",
+              "display" : "Chile"
+            }
+          ]
+        },
+        "system" : "http://regcivil.cl/Validacion/RUN",
+        "value" : "15.236.327-k"
+      }
+    ],
+    "active" : true,
+    "name" : [
+      {
+        "use" : "official",
+        "family" : "Rosales",
+        "_family" : {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+              "valueString" : "Bosh"
+            }
+          ]
+        },
+        "given" : [
+          "Marietta",
+          "María",
+          "Ximena"
+        ]
+      },
+      {
+        "use" : "usual",
+        "given" : [
+          "Xime"
+        ]
+      }
+    ],
+    "telecom" : [
+      {
+        "system" : "phone",
+        "value" : "943561833",
+        "use" : "mobile"
+      },
+      {
+        "system" : "email",
+        "value" : "mariRosal@mimail.com",
+        "use" : "work"
+      }
+    ],
+    "gender" : "female",
+    "birthDate" : "1983-03-24",
+    "address" : [
+      {
+        "use" : "home",
+        "line" : [
+          "Av Los Chirimoyos, 32, casa 4"
+        ],
+        "_city" : {
+          "extension" : [
+            {
+              "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ComunasCl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodComunasCL",
+                    "code" : "05602",
+                    "display" : "Algarrobo"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_district" : {
+          "extension" : [
+            {
+              "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/ProvinciasCl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodProvinciasCL",
+                    "code" : "056",
+                    "display" : "San Antonio"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_state" : {
+          "extension" : [
+            {
+              "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/RegionesCl",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "https://hl7chile.cl/fhir/ig/CoreCL/CodeSystem/CSCodRegionCL",
+                    "code" : "05",
+                    "display" : "Valparaíso"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "_country" : {
+          "extension" : [
+            {
+              "url" : "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises",
+              "valueCodeableConcept" : {
+                "coding" : [
+                  {
+                    "system" : "urn:iso:std:iso:3166",
+                    "code" : "CL",
+                    "display" : "Chile"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
